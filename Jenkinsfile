@@ -46,16 +46,7 @@ pipeline
              }
          }
      }
-     stage('contdelivery')
-     {
-         steps
-         {
-             script
-             {
-                 cicd.tomcatdeploy("declarativepipelinewithsharedlibrary","172.31.16.199","myprodapp")
-             }
-         }
-     }
+    
 }
 }
 
